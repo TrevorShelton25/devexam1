@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hi angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body ng-app="hi-angular">
+    <div class="container-fluid" ng-controller="MainController">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <a href="">link to my repo</a>
+                <a href="/file">go here to see how you can write a file to the server</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 id="page-title">Dev Qualifying Exam</h1>
+                <div id="myData"></div>
+                <h1 id="user.json">{
+                    "name": "Trevor Shelton",
+                    "github": "TrevorShelton25",
+                    "repo": "url to the repo",
+                    "app": "url to the heroku app you create for this",
+                    "skills": [
+                    "GitHub",
+                    "Angular",
+                    "Java",
+                    "PHP",
+                    "Markdown"
+                    ]
+                    }</h1>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.app = angular.module('hi-angular', []);
+        app.controller('MainController', function ($scope, $http) {
+            $scope.user = null;
+
+
+
+        });
+
+
+
+
+    </script>
+
+    <style type="text/css">
+        html,
+        body {
+            min-height: 100vh;
+            background-color: #e8e8e8;
+        }
+
+        .container {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        #page-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .table-title {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .table {
+            background-color: #ffffff;
+            box-shadow: 2px 2px 15px -3px rgba(0, 0, 0, 0.75);
+        }
+
+        #balance-text {
+            text-align: center;
+            margin-top: -20px;
+            margin-bottom: 30px;
+        }
+
+        .margin-auto {
+            margin: auto;
+            display: block;
+        }
+
+        .btn-search {
+            margin-bottom: 50px;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .no-data-text {
+            color: red;
+            text-align: center;
+        }
+    </style>
+
+</body>
+
+</html>
