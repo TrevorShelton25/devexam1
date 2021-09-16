@@ -1,8 +1,8 @@
 {
     "name": "Trevor Shelton",
     "github": "TrevorShelton25",
-    "repo": "url to the repo",
-    "app": "url to the heroku app you create for this",
+    "repo": "https://github.com/TrevorShelton25/devexam1",
+    "app": "https://devexam1.herokuapp.com/",
     "skills": [
         "GitHub",
         "Angular",
